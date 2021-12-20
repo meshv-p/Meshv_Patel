@@ -1,0 +1,544 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&family=Open+Sans:wght@300&family=Red+Rose&family=Righteous&family=Ubuntu&display=swap');
+:root{
+    --base:#3071EA;
+    --blue-200: rgba(48, 113, 234, 0.8);
+    --gradient1:linear-gradient(90deg, rgba(62, 68, 229, 0.24) 94.79%, rgba(62, 68, 229, 0.04) 100%, rgba(173, 173, 255, 0.69) 100%);
+    --gradient2:linear-gradient(232deg, #e5eeff,#ebecff );
+    --heading:'Red Rose';
+    --heading1:'Righteous';
+    --text:'Open Sans', sans-serif;
+}
+
+body{
+    margin: 0;padding: 0;
+    font-family: var(--heading);
+    scroll-behavior: smooth;
+}
+
+/* defines */
+.flex{
+    display: flex;
+}
+.grid{
+    display: grid;
+}
+ul{
+    margin: 0;
+}
+.space{
+    padding: 7rem 3rem;
+}
+
+button{
+    cursor: pointer;
+}
+.shadow{
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+p{
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+hr{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+h1{
+    font-family: var(--heading1);
+    font-size: 2rem;
+}
+.w-50{
+    width: 50%;
+}
+.w-75{
+    width: 75%;
+    margin-top: 2rem;
+}
+.center{
+    justify-content: center;
+    align-items: center;
+}
+.col{
+    flex-direction: column;
+}
+.col-1{
+    grid-template-columns: auto;
+}
+.col-2{
+    grid-template-columns: auto auto;
+}
+.icon-accent{
+    color: #F29595;
+}
+
+.br{
+    border: 1px solid red;
+}
+/* end of defines */
+
+
+/* Nav bar */
+header{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    /* backdrop-filter: blur(10px); */
+}
+nav{
+    /* position: sticky; */
+    justify-content: space-between;
+    /* border: 1px solid var(--base); */
+    background-color: linear-gradient(90deg, rgba(173, 173, 255, 0.69) 100%);
+    background: var(--gradient2);
+    /* backdrop-filter: opa; */
+    /* background-color: rgba(173, 173, 255, 0.69) ; */
+    padding-left:  1rem;
+    padding-right:  1rem;
+}
+.logo {
+    padding-left: 1rem;
+}
+.logo img{
+    height: 4rem;
+}
+/* .Nav__links{
+    border:1px solid #3071EA;
+} */
+.Nav__links ul {
+    align-items: center;
+    /* border:1px solid #3071EA; */
+    justify-content: center;
+}
+.Nav__links ul > *{
+    margin:0 .4rem;
+}
+.Nav__links  li{
+    list-style: none;
+    
+}
+.Nav__links  li a{
+    text-decoration: none;
+    padding:.2rem 1rem;
+    flex-direction: column;
+    font-family: var(--heading1);
+}
+.Nav__links li img{
+    max-width: 1.9rem;
+    padding: .2rem 0;
+}
+/* .Nav__links  li a:hover{
+    border: .5px dashed var(--base);
+} */
+.nav-active{
+    color: var(--base);
+}
+.Nav__links  li a span{
+   margin: .5rem 0;
+}
+.mobile{
+    display: none;
+}
+.nav__icon :nth-child(1){
+    width: 21px;
+    transition: 2s ease-in linear;
+    /* transform: translateX(0); */
+}
+.nav__icon :nth-child(2){
+    width: 42px;
+}
+.nav__icon :nth-child(3){
+    width: 21px;
+    /* transform: translateX(20px); */
+}
+.bar1{
+    width: 21px;
+    transform: rotate( 
+46deg) translateY(5px);
+    transform-origin: left;
+}
+.bar2{
+    width: 42px;
+    transform: rotate(
+        127deg);
+            transform-origin: 16px;
+}
+.bar3{
+    width: 21px;
+    transform: translateX(20px);
+    transform: rotate(
+45deg) translateX(6px);
+    transform-origin: right;
+}
+/* end navbar */
+
+
+/* home section */
+.home{
+    /* border: 1px solid var(--base); */
+    height: auto;
+    background: url("Pic/waves.svg") no-repeat #E5EEFF;
+    background-position-y: -42px;
+}
+.intro{
+    padding: 7rem 3rem;
+    justify-content: space-between;
+    background: url(Pic/waves2.svg) no-repeat;
+    background-position-y: 370px;
+}
+
+.name p{
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+.name span{
+    font-size: 1.1rem;
+}
+.text{
+    color: var(--base);
+}
+.btns{
+    flex-direction: row;
+    padding:1.525rem 1rem;
+    padding-left: 0;
+}
+
+.btn > *{
+    padding: 0.7rem 2rem;
+    border-radius: 8px;
+    border: 1px solid var(--base);
+    background-color: transparent;
+    margin: 0 .5rem;
+    font-size: 1rem;
+    color: var(--blue-200); 
+    font-weight: bold;
+    /* box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25); */
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    font-family: var(--heading); letter-spacing: 1.5px;
+}
+.btn :nth-child(1){
+    background-color: var(--base);
+    color: white;
+
+    font-weight: bold;
+}
+.btn  :hover{
+    background-color: var(--base);
+    color: white;
+    /* border: 1px solid white; */
+    /* filter: drop-shadow(0px 5px 14px rgba(0, 0, 0, 0.25)); */
+}
+.path{
+    transform: translateY(-10px);
+}
+
+/* ============================= about ========================= */
+section[id="about"]{
+    background-color: #D6E0FF;
+}
+.img-circle{
+    border-radius: 50%;
+    width: 25rem;
+    height: 25rem;
+}
+
+/* ============================= projects ========================= */
+section[id="projects"]{
+    background-color: #FCF4FA;
+}
+.wrraper{
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+.projects{
+    flex-direction: column;
+}
+.thumb{
+    background:url("Pic/notes.png") ;
+    width: 30rem;
+    height: 30rem; 
+    align-items: center;
+}
+
+/* hover option */
+.project:hover  .thumb{
+    filter: brightness(.8);
+}
+.project:hover .thumb::after {
+    content: "This is Notes App , with fully functionallity .Moreover connect with backend , database also.";
+    width: auto;
+    height: auto;
+    padding: 0 2rem; 
+    color: black;
+    font-size: 1.1rem;
+    font-weight: 400;
+    /* filter: opacity(.5); */
+}
+
+.see_more{
+    width: 100%;
+    /* flex-direction: column; */
+    justify-content: end;
+}
+
+
+
+/* ============================= Skills ========================= */
+section[id="skills"]{
+    background-color: #F2FAFB;
+}
+.img-skill{
+    width: 77%;
+    /* height: 72%; */
+    border-radius: 10px;
+    margin-left: 70px;
+}
+
+.left > p{
+    line-height: 1.9rem;
+    word-spacing: 0.3rem;
+    margin-top: 1.5rem
+}
+
+/* ============================= Contact ========================= */
+section[id="contact"]{
+    background-color: rgba(253, 241, 238, 0.9);
+    
+}
+.contact{
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.left-sk{
+    background: #1C62E3  ;
+    color: white;
+    border-radius: 10px 0 0 10px;
+    min-height: 650px;
+    /* url("Pic/circle.svg") no-repeat 250px 275px */
+}
+.right-sk{
+    background-color: white;
+    border-radius: 0 10px 10px 0;
+    min-height: 650px;
+}
+
+.text-big{
+    font-size: 2.9rem;
+    letter-spacing: 3px;
+}
+.contact__option{
+    margin-top: 8rem;
+}
+.text-left{
+    margin-left: 2rem;
+    text-decoration: none;
+    color: inherit;
+}
+.icon{
+    font-size: 1.8rem;
+    margin: 0 2.3rem  0.5rem 0;
+}
+
+.circles{
+    position: relative;
+    left: 150px;
+    bottom: -84px;
+    display: inline-block;
+}
+.circle__sm{
+    position: absolute;
+    mix-blend-mode: multiply;
+}
+
+label{
+    margin:0.5rem 0 1rem 0;
+}
+.Name , .Phone__Number , .Email , .Text{
+    width: 350px;
+    margin: .8rem;
+}
+.Email , .Text{
+    width: 97%;
+}
+input , textarea {
+    padding: 0.7rem;
+    border-radius: 0 10px 10px 0;
+    border: 2px solid #F29595;
+}
+.Submit__btn{
+    justify-content: end;
+}
+
+.Submit{
+    width: 240px;
+    padding: 1rem;
+    border-radius: 0 10px 10px 0;
+    border: transparent;
+    background-color: #1C62E3;
+    color: white;
+    font-size: 1rem;
+}
+
+
+/* ============================= Footer ========================= */
+.footer{
+    justify-content: space-between;
+}
+
+.des{
+    margin-left: .6rem;
+}
+/* media queries */
+@media (max-width:35em) {
+   
+    .Nav__links {
+        position: fixed;
+        /* border: 1px solid var(--base); */
+        bottom: 0;
+        background:linear-gradient(232deg, #e5eeff,#ebecff);
+        z-index: 100;
+        left:0;
+    }
+    .Nav__links ul{
+        justify-content: space-around;
+        padding: 0;
+        width: 100vw;
+    }
+    .Nav__links li a {
+        padding: 0.2rem .3rem;
+    }
+    .Nav__links li span{
+        font-size: 12px;
+    }
+    /* .nav__icon :nth-child(3){
+    transform: translateX(20px);
+    } */
+    .bar{
+        /* width: 42px; */
+        margin: 12px 0 0 0 ;
+        border: 2px solid black;
+    }
+    .laptop{
+        display: none;
+    }
+    .mobile{
+        display: flex;
+    }
+    .home{
+        padding: 1rem 0;
+    }
+    .intro , .about{
+        flex-direction: column;
+        padding:7rem 3rem;
+        padding-bottom: 0;
+    }
+    .name p{
+        font-size: 3rem;
+    }
+    .name span{
+        font-size: 1.3rem;
+    }
+    button{
+        width: 10rem;
+    }
+    .btn > *{
+        filter: none;
+        padding: .7rem .8rem;
+    }
+    .pic{
+       display: flex;
+       justify-content: center;
+    }
+    .pic img{
+        width:auto;
+        height: 210px;
+        margin:1rem 0;
+    }
+    .about > .left >h1{
+        font-size: 2.5rem;
+    }
+    .w-50{
+        width: auto;
+    }
+    .thumb{
+        max-width: 400px;
+    }
+    .left-sk{
+        width: 379px;
+        border-radius: 10px 10px 0 0;
+    }
+    .right-sk{
+        width: 379px;
+        border-radius: 0 0 10px 10px;
+    }
+    .left > p{
+        font-size: 1.4rem;
+    }
+    .left-sk > .contact__option{
+        margin-top: 5rem;
+    }
+    .skill{
+        flex-direction: column;
+    }
+    .img-skill{
+        margin-left: 40px;
+    }
+    .contact{
+        flex-direction: column;
+    }
+    .circles{
+        left: 132px;
+        bottom: -133px;
+    }
+    .social_icons{
+        justify-content: start;
+    }
+    .contact__option{
+        margin-top: 5rem;
+    }
+    .icon{
+        margin: 0 1.2rem .5rem 0;
+    }
+    .col-2{
+        grid-template-columns: auto;
+    }
+    .Email , .Text{
+        width: 93%;
+    }
+    .sBtn{
+        margin: 0 12px  15px 0;
+    }
+    .footer{
+        padding: 56px 26px 90px 26px;
+    }
+    .logo{
+        padding-left: 0;
+    }
+    .upper{
+        font-size: 19px;
+    }
+    .des > .lower{
+        font-size: 12px;
+    }
+    .footer > .text{
+        display: none;
+    }
+    .footer > .icon{
+        display: flex;
+        flex-wrap: nowrap;
+        margin-right: 0px;
+        padding-left: 0px;
+    }
+    .ficon{
+        font-size: 1.3rem;
+    }
+    .none{
+        display: none;
+    }
+}
+
+.bar3{
+    width: 21px;
+    transform: translateX(20px);
+    transform: rotate(
+45deg) translateX(6px);
+    transform-origin: right;
+}
