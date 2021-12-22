@@ -237,8 +237,8 @@ section[id="about"]{
 }
 .img-circle{
     border-radius: 50%;
-    width: 25rem;
-    height: 25rem;
+    width: clamp(347px,2.5vw,25rem);
+    height: clamp(347px,2.5vw,25rem);
 }
 
 /* ============================= projects ========================= */
@@ -459,7 +459,7 @@ input , textarea {
         width: auto;
     }
     .thumb{
-        max-width: 400px;
+        max-width: clamp(347px,2.5vw,25rem);
     }
     .left-sk{
         width: 379px;
@@ -486,7 +486,7 @@ input , textarea {
     }
     .circles{
         left: 132px;
-        bottom: -133px;
+        bottom: -129px;
     }
     .social_icons{
         justify-content: start;
