@@ -138,6 +138,9 @@ nav{
 .mobile{
     display: none;
 }
+.Navbtn{
+    display: none;
+}
 .nav__icon :nth-child(1){
     width: 21px;
     transition: 2s ease-in linear;
@@ -411,6 +414,9 @@ input , textarea {
     /* .nav__icon :nth-child(3){
     transform: translateX(20px);
     } */
+    .Navbtn{
+        display: block;
+    }
     .bar{
         /* width: 42px; */
         margin: 12px 0 0 0 ;
