@@ -156,6 +156,9 @@ nav{
 .mobile{
     display: none;
 }
+.Navbtn{
+    display: none;
+}
 .nav__icon :nth-child(1){
     width: 21px;
     transition: 2s ease-in linear;
@@ -418,7 +421,7 @@ label{
     margin:0.5rem 0 1rem 0;
 }
 .Name , .Phone__Number , .Email , .Text{
-    width: 350px;
+    width: clamp(323px,2.5vw,25rem);
     margin: .8rem;
 }
 .Email , .Text{
@@ -536,14 +539,14 @@ input , textarea {
         width: auto;
     }
     .thumb{
-        max-width: 400px;
+        max-width: clamp(347px,2.5vw,25rem);
     }
     .left-sk{
-        width: 379px;
+        width: clamp(347px,2.5vw,25rem);
         border-radius: 10px 10px 0 0;
     }
     .right-sk{
-        width: 379px;
+        width: clamp(347px,2.5vw,25rem);
         border-radius: 0 0 10px 10px;
     }
     .left > p{
@@ -562,8 +565,8 @@ input , textarea {
         flex-direction: column;
     }
     .circles{
-        left: 132px;
-        bottom: -133px;
+        left: 116px;
+        bottom: -128px;
     }
     .social_icons{
         justify-content: start;
