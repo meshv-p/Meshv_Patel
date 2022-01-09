@@ -16,6 +16,9 @@ body{
 }
 
 /* defines */
+a{
+    text-decoration: none;
+}
 .flex{
     display: flex;
 }
