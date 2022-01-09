@@ -12,7 +12,7 @@
             "name":"News App",
             "desc":"This is News app,where you will get daily updated news with category wise filter you can.Moreover, according to your interest,you can serch perticular news.",
             "type":"frontend",
-            "img":"https:/source.unsplash.com/500x500/?news",
+            "img":"Pic/newsapp.jpeg",
             "github":"https:/github.com/meshv-p/newsapi",
             "link":"https:/meshv-p.github.io/newsapi"
         },
