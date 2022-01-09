@@ -74,6 +74,24 @@ h1{
 .br{
     border: 1px solid red;
 }
+.btn-blue{
+    background: #135FEC;
+    color: white;
+    border-radius: 10px;
+    padding: 0.7rem 5rem;
+    border: white;
+}
+.btn-outline-blue{
+    background-color: transparent;
+    color: #135FEC;
+    border: 1px solid #135FEC;
+    border-radius: 10px;
+    padding: 0.7rem 5rem;
+}
+.btn-outline-blue:hover{
+    background-color: #135FEC;
+    color: white;
+}
 /* end of defines */
 
 
@@ -149,6 +167,9 @@ nav{
 .nav__icon :nth-child(3){
     width: 21px;
     /* transform: translateX(20px); */
+}
+.Navbtn{
+    display: none;
 }
 .bar1{
     width: 21px;
@@ -237,8 +258,8 @@ section[id="about"]{
 }
 .img-circle{
     border-radius: 50%;
-    width: 25rem;
-    height: 25rem;
+    width: clamp(347px,2.5vw,25rem);
+    height: clamp(347px,2.5vw,25rem);
 }
 
 /* ============================= projects ========================= */
@@ -252,15 +273,60 @@ section[id="projects"]{
 .projects{
     flex-direction: column;
 }
-.thumb{
+
+.P-btns{
+    justify-content: space-evenly;
+    padding: 0.5rem 0 0 0;
+}
+.All_projects{
+    padding: .5rem 2.2rem;
+    padding-top: 35px;
+    flex-wrap: wrap;
+    gap: 60px;
+}
+/* #all{
+    border: white;
+} */
+.card{
+    /* border: 1px solid red; */
+    width: 20rem;
+    height: 27.8rem;
+    height: max-content;
+    border-radius: 10px;
+    padding: 0 0 1rem 0;
+    background-color: rgba(19, 95, 236, 0.25);
+}
+.link{
+    text-decoration: none;
+}
+.thumb > img{
+    width: 100%;
+    height: 245px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+.P_about{
+    padding: 0 1rem;
+}
+.two_btns{
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+.btn-left-p{
+    padding:.5rem 1.3rem;
+}
+.btn-right-p{
+    padding:.5rem 1.4rem;
+}
+/* .thumb{
     background:url("Pic/notes.png") ;
     width: 30rem;
     height: 30rem; 
     align-items: center;
-}
+} */
 
 /* hover option */
-.project:hover  .thumb{
+/* .project:hover  .thumb{
     filter: brightness(.8);
 }
 .project:hover .thumb::after {
@@ -271,8 +337,8 @@ section[id="projects"]{
     color: black;
     font-size: 1.1rem;
     font-weight: 400;
-    /* filter: opacity(.5); */
-}
+    /* filter: opacity(.5); 
+} */
 
 .see_more{
     width: 100%;
@@ -411,6 +477,9 @@ input , textarea {
     /* .nav__icon :nth-child(3){
     transform: translateX(20px);
     } */
+    .Navbtn{
+        display: block;
+    }
     .bar{
         /* width: 42px; */
         margin: 12px 0 0 0 ;
@@ -439,14 +508,22 @@ input , textarea {
     button{
         width: 10rem;
     }
+    .P-btns{
+        gap: 24px;
+        flex-wrap: wrap;
+    }
     .btn > *{
         filter: none;
         padding: .7rem .8rem;
+    }
+    .P-btns > .btn{
+        padding:.7rem .3rem ;
     }
     .pic{
        display: flex;
        justify-content: center;
     }
+
     .pic img{
         width:auto;
         height: 210px;

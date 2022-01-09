@@ -11,9 +11,20 @@
     <meta name="description" content="This is a Portfolio about me (Meshv Patel) as UI Designer , figma...">
     <title>Meshv Patel | UI Designer | Portfolio </title>
     <link rel="stylesheet" href="style.css">
+    <!-- AOS link -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- Font awesome icon -->
     <script src="https://kit.fontawesome.com/e7db68ceb9.js" crossorigin="anonymous"></script>
 </head>
+
+<!-- Tasks:
+    1. ADD AOS
+    2. ADD MY PROJECT AS FILTERS
+    3. DARK MODE
+    4. GLASSOMORPHISM
+    5. SOME GOOD ANIMATIONS AND GOOD ILLUSTRATIONS
+-->
 
 <body>
     <header>
@@ -86,7 +97,7 @@
 
 
     <!-- For About Section -->
-    <section id="about">
+    <section id="about" data-aos="fade-right">
         <div class="flex space about">
             <div class="left w-50">
                 <h1>A Bit about me ...</h1>
@@ -103,47 +114,32 @@
     </section>
 
     <!-- Projects -->
-    <section id="projects">
-        <div class="flex center projects">
-            <div class="first">
+    <section id="projects" data-aos="zoom-in-down">
+        <div class="flex projects">
+            <div class="first" align="center">
                 <h1>What I have done so far ...</h1>
                 <hr class="w-50">
-                <p class="flex center">Pojcets</p>
+                <p class="flex center">Projects</p>
                 <hr class="w-50">
             </div>
             <div class="allProjects">
-                <div class="grid wrraper">
+                <!-- <div class="grid wrraper">
                     <div class="project">
                         <div class="thumb flex">
                             <!-- <div class="desc">
                                 This is Notes App , with fully functionallity .Moreover connect with backend , database
                                 also.
-                            </div> -->
+                            </div>
                         </div>
                         <div class="name">Notes App</div>
                     </div>
-                    <div class="project none">
-                        <div class="thumb flex">
-                            <!-- <div class="desc">
-                               This is Notes App , with fully functionallity .Moreover connect with backend , database
-                                also.
-                            </div>  -->
-                        </div>
-                        <div class="name">Notes App</div>
-                    </div>
-                    <div class="project none">
-                        <div class="thumb flex">
-                            <!-- <div class="desc">
-                                This is Notes App , with fully functionallity .Moreover connect with backend , database
-                                also.
-                            </div> -->
-                        </div>
-                        <div class="name">Notes App</div>
-                    </div>
-
-
-
-
+                </div> -->
+                <div class="P-btns flex">
+                    <button onclick="setcategory(this.id)" id="all" class="btn btn-blue btn-filter">All</button>
+                    <button onclick="setcategory(this.id)" id="frontend" class="btn btn-outline-blue btn-filter">Frontend</button>
+                    <button onclick="setcategory(this.id)" id="full-stack" class="btn btn-outline-blue btn-filter">Full-stack</button>
+                </div>
+                <div class="All_projects flex">
                 </div>
             </div>
             <div class="see_more flex">
@@ -157,7 +153,7 @@
 
 
     <!-- Skills -->
-    <section id="skills">
+    <section id="skills" data-aos="fade-down">
         <div class="skill space flex">
             <div class="left w-50">
                 <h1>What I Know So far ...</h1>
@@ -180,7 +176,7 @@
     </section>
 
     <!-- Contact Me -->
-    <section id="contact">
+    <section id="contact" data-aos="fade-up">
         <div class="flex center space contact outer">
             <div class="left-sk">
                 <div class="flex center col">
@@ -247,7 +243,7 @@
                     </div>
                     <div class="grid col-1 sBtn">
                         <div class="Submit__btn flex">
-                            <button type="submit" class="Submit">Submit</button>
+                            <button type="submit" data-aos="fade-down" class="Submit">Submit</button>
                         </div>
                     </div>
                 </form>
