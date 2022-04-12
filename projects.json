@@ -5,16 +5,16 @@
             "desc":"This is Notes App , with fully functionallity .Moreover connect with backend , database also.",
             "type":"full-stack",
             "img":"https://images.unsplash.com/photo-1517842645767-c639042777db?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=500&ixid=MnwxfDB8MXxyYW5kb218MHx8TW5vdGUsbm90ZXx8fHx8fDE2NDE3MDM1ODI&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=500",
-            "github":"/https://github.com/meshv-p/mnotes",
-            "link":"/https://mnote.pythonanywhere.com"
+            "github":"https://github.com/meshv-p/mnotes",
+            "link":"https://mnote.pythonanywhere.com"
         },
         {
             "name":"News App",
             "desc":"This is News app,where you will get daily updated news with category wise filter you can.Moreover, according to your interest,you can serch perticular news.",
             "type":"frontend",
             "img":"Pic/newsapp.jpeg",
-            "github":"/https://github.com/meshv-p/newsapi",
-            "link":"/https://meshv-p.github.io/newsapi"
+            "github":"https://github.com/meshv-p/newsapi",
+            "link":"https://meshv-p.github.io/newsapi"
         },
         {
             "name":"Notes (MERN-Stack)",
